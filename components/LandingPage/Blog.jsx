@@ -143,8 +143,8 @@ const Blog = () => {
       alt="Shape Color Shadow"
     />
   </div>
-</section>
-
+    </section>
+   
     </>
   )
 }

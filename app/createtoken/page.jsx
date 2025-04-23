@@ -1,8 +1,13 @@
 import React from 'react'
+import '../../public/assets/images/site_logo/favicon_1.svg'
+import '../../public/assets/css/fontawesome.css'
+
+
 
 const CreateToken = () => {
   return (
     <>
+    <main className="page_content">
     <section className="register_section section_decoration">
   <div className="container">
     <div className="row justify-content-center">
@@ -129,6 +134,7 @@ const CreateToken = () => {
     </div>
   </div>
 </section>
+</main>
 
     </>
   )

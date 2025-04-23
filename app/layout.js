@@ -3,6 +3,16 @@ import "./globals.css";
 import Wrapper from "../Services/Wrapper";
 import { ToastContainer } from "react-toastify";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import PageLoading from "../components/Loading/PageLoading";
+import "../public/assets/css/bootstrap.min.css"
+import "../public/assets/css/fontawesome.css"
+import "../public/assets/css/cursor.css"
+import "../public/assets/css/animate.min.css"
+import "../public/assets/css/aos.css"
+import "../public/assets/css/swiper-bundle.min.css"
+import "../public/assets/css/magnific-popup.min.css"
+import "../public/assets/css/odometer.min.css"
+import "../public/assets/css/style.css"
 
 
 
@@ -24,7 +34,7 @@ export default function RootLayout({
 
 			</head>
 			<body className="index_ico" suppressHydrationWarning={true}>
-				
+				<PageLoading/>
 				<ToastContainer
 					position="top-right"
 					autoClose={5000}

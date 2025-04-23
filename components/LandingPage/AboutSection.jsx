@@ -1,7 +1,14 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
 const AboutSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <>
       <section
