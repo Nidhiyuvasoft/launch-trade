@@ -1,6 +1,14 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
+import AOS from "aos";
 
 const page = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <>
     <main className="page_content">

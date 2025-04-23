@@ -1,72 +1,4 @@
-/* Table Of Content - start
-================================================== */
-/* 
-* Project Name   :  Coinpay - Crypto Currency Site Template.
-* File           :  CSS Base
-* Version        :  1.0.0
-* Author         :  XpressBuddy (https://themeforest.net/user/xpressbuddy/portfolio)
-* Developer			 :	webrok (https://www.fiverr.com/webrok?up_rollout=true)
 
-==================================================
-
-1 - Template Global Settings
-* - 1.01 - Template Fonts
-* - 1.02 - Template Reset
-
-2 - Template Blocks
-* - 2.01 - CSS Animations
-* - 2.02 - Spacing and Gaps
-* - 2.03 - Ordered and Unordered list
-* - 2.04 - Button
-* - 2.05 - Video
-* - 2.06 - Typography
-* - 2.07 - Form
-* - 2.08 - Social
-* - 2.09 - Pagelist
-* - 2.10 - Iconlist
-* - 2.11 - Tab
-* - 2.12 - Iconbox
-* - 2.13 - Event
-* - 2.14 - Roadmap
-* - 2.15 - Countdown
-* - 2.16 - Accordion
-* - 2.17 - ProgressBar
-* - 2.18 - Authorbox
-* - 2.19 - Pagination
-* - 2.20 - Team
-* - 2.21 - Partnerlogo
-* - 2.22 - Tokenomics
-* - 2.23 - Blog
-
-3 - Template Parts
-* - 3.01 - Site Header
-* - 3.02 - Site Footer
-* - 3.03 - Page Header
-* - 3.04 - Breadcrumb
-* - 3.05 - Sidebar
-
-4 - Template Patterns
-* - 4.01 - Hero Section
-* - 4.02 - Countdown Section
-* - 4.03 - About Section
-* - 4.04 - Table Section
-* - 4.05 - Chart Section
-* - 4.06 - Service Section
-* - 4.07 - Content Ticker Section
-* - 4.08 - Tokenomics Section
-* - 4.09 - Feature Section
-* - 4.10 - Roadmap Section
-* - 4.11 - Testimonial Section
-
-5 - Templates
-* - 5.01 - Home Pages
-* - 5.02 - Details Pages
-* - 5.03 - Contact Page
-* - 5.04 - Register Pages
-
-*/
-/* Table Of Content - end
-================================================== */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;display=swap");
@@ -232,6 +164,110 @@ mark {
   color: var(--bs-primary);
   background-color: transparent;
 }
+
+
+
+.avatar-upload {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    border: 2px dashed #321758;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar-upload .avatar-edit {
+  position: absolute;
+  right: 12px;
+  z-index: 1;
+  top: 10px;
+}
+.avatar-upload .avatar-edit input {
+  display: none;
+}
+.avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #371962;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+  background: #441e77;
+  border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label:after {
+  content: "\f040";
+  font-family: "FontAwesome";
+  color: #ffffff;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+.avatar-upload .avatar-preview {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  border-radius: 100%;
+  border: 2px dashed #321758;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.my-token-info{
+  text-align: center;
+}
+.my-token-info h2{
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.token-img{
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  margin: 0 auto 10px;
+}
+.token-img img{
+  border-radius: 100%;
+}
+.my-token-info h3{
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.token-info {
+    font-size: 16px;
+    color: #5e4e7c;
+    font-weight: 600;
+}
+.divider-line{
+  height: 1px;
+  margin: 15px 0;
+  background-color: #21234b;
+}
+
 .showmore{
   display: none;
 }
@@ -284,6 +320,11 @@ mark {
 .glowing-button-area.max-280 .glowing-button{
   font-size: 20px;
 }
+.btn.btn-small {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 20px;
+  }
 .container {
   max-width: 1320px;
   padding-left: 15px;
@@ -951,13 +992,12 @@ mark {
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: var(--bs-white);
-  border-color: var(--bs-secondary);
-  background-color: var(--bs-secondary);
+  border: none;
+  background: linear-gradient(0deg, #2c8cff, #ff5073);
 }
 .btn:hover {
   color: var(--bs-white);
-  border-color: var(--bs-primary);
-  background-color: var(--bs-primary);
+  background-color: linear-gradient(0deg, #ff5073, #2c8cff);
 }
 
 .btn_link {
@@ -2584,216 +2624,7 @@ input[type=search]::-webkit-search-results-decoration {
 
 /* 2.13 - Event - End
 ================================================== */
-/* 2.14 - Roadmap - Start
-================================================== */
-.roadmap_block {
-  z-index: 2;
-  padding: 40px;
-  position: relative;
-  border-radius: 20px;
-  -webkit-transition: -webkit-box-flex 0.2s ease-in;
-  transition: -webkit-box-flex 0.2s ease-in;
-  transition: flex 0.2s ease-in;
-  transition: flex 0.2s ease-in, -webkit-box-flex 0.2s ease-in, -ms-flex 0.2s ease-in;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(var(--bs-border-color)));
-  background-image: linear-gradient(0deg, transparent, var(--bs-border-color));
-}
-.roadmap_block:before {
-  inset: 20px;
-  content: "";
-  z-index: -1;
-  position: absolute;
-  border-radius: inherit;
-  border: 1px solid transparent;
-}
-.roadmap_block:after {
-  inset: 1px;
-  content: "";
-  z-index: -2;
-  position: absolute;
-  border-radius: inherit;
-  background-size: 100% 0%;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-color: var(--bs-dark);
-  background-image: url("../images/backgrounds/bg_image_1.png");
-}
-.roadmap_block .badge {
-  line-height: 1;
-  font-size: 24px;
-  padding: 14px 15px;
-  border-radius: 8px;
-  border: 1px solid #1D204B;
-  color: var(--bs-secondary);
-  background-color: rgba(29, 32, 75, 0.41);
-  font-family: var(--bs-heading-font-family);
-}
-.roadmap_block .heading_text {
-  font-size: 24px;
-  line-height: 32px;
-  margin: 31px -20px 18px 0;
-}
-.roadmap_block .iconlist_block {
-  gap: 16px;
-  opacity: 0;
-  min-height: 350px;
-}
-.roadmap_block .iconlist_block .iconlist_icon {
-  width: auto;
-  font-size: 5px;
-  margin: 9px 0 0;
-}
-.roadmap_block .iconlist_block .iconlist_label {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: var(--bs-body-color);
-  font-family: var(--bs-body-font-family);
-}
-.roadmap_block .hover_shape {
-  top: 70%;
-  right: 30px;
-  max-width: 142px;
-  position: absolute;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  mix-blend-mode: luminosity;
-  -webkit-transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.roadmap_block.active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--bs-border-color)), to(var(--bs-border-color)));
-  background-image: linear-gradient(0deg, var(--bs-border-color), var(--bs-border-color));
-}
-.roadmap_block.active:before {
-  border-color: var(--bs-border-color);
-}
-.roadmap_block.active:after {
-  background-size: 100% 100%;
-}
-.roadmap_block.active .iconlist_block {
-  opacity: 1;
-}
-.roadmap_block.active .hover_shape {
-  top: -13%;
-  right: -65px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-  mix-blend-mode: normal;
-}
 
-.ico_roadmap_flexbox {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.ico_roadmap_flexbox .roadmap_block {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  position: relative;
-}
-.ico_roadmap_flexbox .roadmap_block.active {
-  -webkit-box-flex: 1.6;
-      -ms-flex: 1.6;
-          flex: 1.6;
-  z-index: 3;
-}
-
-.meme_roadmap_block .serial_number {
-  z-index: 2;
-  line-height: 1;
-  padding: 0 24px;
-  font-size: 14px;
-  position: relative;
-  margin-bottom: 46px;
-  color: var(--bs-light);
-  font-family: var(--bs-heading-font-family);
-}
-.meme_roadmap_block .serial_number:before {
-  top: 100%;
-  left: 60px;
-  width: 1px;
-  content: "";
-  height: 100px;
-  margin-top: 10px;
-  position: absolute;
-  background-color: #1F453D;
-}
-.meme_roadmap_block .roadmap_info {
-  z-index: 1;
-  padding: 67px 44px;
-  position: relative;
-  border-radius: 20px;
-  background-color: var(--bs-primary);
-}
-.meme_roadmap_block .roadmap_info:before {
-  inset: 1px;
-  content: "";
-  z-index: -1;
-  position: absolute;
-  border-radius: inherit;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(40%, var(--bs-dark)), to(transparent));
-  background-image: linear-gradient(0deg, var(--bs-dark) 40%, transparent 100%);
-}
-.meme_roadmap_block .roadmap_info:after {
-  top: 50%;
-  left: 50%;
-  z-index: -1;
-  content: "";
-  width: 100%;
-  height: 250px;
-  position: absolute;
-  -webkit-filter: blur(50px);
-          filter: blur(50px);
-  border-radius: 100%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: var(--bs-dark);
-}
-.meme_roadmap_block .roadmap_title {
-  line-height: 1;
-  font-size: 20px;
-  position: relative;
-  padding-left: 50px;
-  margin-bottom: 40px;
-}
-.meme_roadmap_block .roadmap_title:before {
-  top: 2px;
-  left: 8px;
-  z-index: 2;
-  content: "";
-  width: 15px;
-  height: 15px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  position: absolute;
-  border-radius: 100%;
-  -webkit-box-shadow: 0 0 0 8px #20242C;
-          box-shadow: 0 0 0 8px #20242C;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--bs-primary)), to(var(--bs-dark)));
-  background-image: linear-gradient(0deg, var(--bs-primary), var(--bs-dark));
-}
-.meme_roadmap_block .iconlist_block > li {
-  gap: 8px;
-}
-.meme_roadmap_block .iconlist_block .iconlist_icon {
-  font-size: 15px;
-  margin-top: 2px;
-}
-.meme_roadmap_block .iconlist_block .iconlist_label {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 20px;
-  font-family: var(--bs-body-font-family);
-}
-
-/* 2.14 - Roadmap - End
-================================================== */
 /* 2.15 - Countdown - Start
 ================================================== */
 .countdown_timer_block {
@@ -3027,127 +2858,7 @@ input[type=search]::-webkit-search-results-decoration {
 
 /* 2.16 - Accordion - End
 ================================================== */
-/* 2.17 - ProgressBar - Start
-================================================== */
-.progress {
-  height: 22px;
-  padding: 2px;
-  border-radius: 30px;
-  background-color: var(--bs-light);
-}
-.progress [aria-valuenow="80"] {
-  width: 80%;
-}
-.progress [aria-valuenow="85"] {
-  width: 85%;
-}
-.progress [aria-valuenow="90"] {
-  width: 90%;
-}
-.progress [aria-valuenow="60"] {
-  width: 60%;
-}
-.progress [aria-valuenow="94"] {
-  width: 94%;
-}
 
-.progress-bar {
-  position: relative;
-  border-radius: inherit;
-  color: var(--bs-heading-color);
-  background-color: var(--bs-primary);
-}
-.progress-bar:after {
-  top: 2px;
-  right: 10px;
-  line-height: 1;
-  font-size: 15px;
-  font-weight: 500;
-  position: absolute;
-  content: attr(aria-valuenow) "%";
-}
-
-/* 2.17 - ProgressBar - End
-================================================== */
-/* 2.18 - Authorbox - Start
-================================================== */
-.postabmin_block {
-  gap: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 40px;
-  border-radius: 20px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  background-color: var(--bs-light);
-  border: 1px solid var(--bs-border-color);
-}
-.postabmin_block .admin_image {
-  width: 150px;
-  height: 150px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  overflow: hidden;
-  border-radius: 100%;
-}
-.postabmin_block .admin_name {
-  line-height: 1;
-  font-size: 22px;
-  margin-bottom: 4px;
-}
-.postabmin_block .admin_designation {
-  display: block;
-  margin-bottom: 10px;
-}
-.postabmin_block .social_block.style_3 a {
-  width: 40px;
-  height: 40px;
-  font-size: 16px;
-  border: 1px solid var(--bs-border-color);
-}
-.postabmin_block .social_block.style_3 a:hover {
-  color: var(--bs-white);
-  border-color: var(--bs-primary);
-}
-
-/* 2.18 - Authorbox - End
-================================================== */
-/* 2.19 - Pagination - Start
-================================================== */
-.pagination_nav {
-  gap: 14px;
-}
-.pagination_nav a {
-  width: 50px;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 6px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: var(--bs-white);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: var(--bs-light);
-  border: 1px solid var(--bs-border-color);
-}
-.pagination_nav > li:hover a,
-.pagination_nav > li.active a {
-  color: var(--bs-white);
-  border-color: var(--bs-secondary);
-  background-color: var(--bs-secondary);
-}
-
-/* 2.19 - Pagination - End
-================================================== */
 /* 2.20 - Team - Start
 ================================================== */
 .ico_team_block {
@@ -3362,91 +3073,7 @@ input[type=search]::-webkit-search-results-decoration {
 
 /* 2.21 - Partnerlogo - End
 ================================================== */
-/* 2.22 - Tokenomics - Start
-================================================== */
-.tokenomics_block > li {
-  gap: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.tokenomics_block > li:not(:last-child) {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--bs-border-color);
-}
-.tokenomics_block > li:nth-child(1) .percent {
-  background-color: #FC1CCF;
-}
-.tokenomics_block > li:nth-child(2) .percent {
-  background-color: #DF5E08;
-}
-.tokenomics_block > li:nth-child(3) .percent {
-  background-color: #07C87F;
-}
-.tokenomics_block > li:nth-child(4) .percent {
-  background-color: #49B7F7;
-}
-.tokenomics_block > li:nth-child(5) .percent {
-  background-color: #DABA5E;
-}
-.tokenomics_block > li:nth-child(6) .percent {
-  background-color: #FF0054;
-}
-.tokenomics_block .percent {
-  width: 78px;
-  height: 46px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  line-height: 1;
-  font-size: 24px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: var(--bs-white);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 10px 0 10px 0;
-  font-family: "Roobert PRO Medium";
-  background-color: var(--bs-secondary);
-}
-.tokenomics_block .heading_text {
-  line-height: 1;
-  font-size: 18px;
-  margin-bottom: 8px;
-  font-family: var(--bs-body-font-family);
-}
-.tokenomics_block .value {
-  line-height: 1;
-  font-size: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: var(--bs-heading-color);
-  font-family: "Roobert PRO Medium";
-}
 
-.icon_coins_image {
-  margin: 0 -120px -140px;
-}
-.icon_coins_image img {
-  -webkit-animation: upDownMover 4s ease-in-out infinite;
-          animation: upDownMover 4s ease-in-out infinite;
-}
-
-/* 2.22 - Tokenomics - End
-================================================== */
 /* 2.23 - Blog - Start
 ================================================== */
 .blog_carousel_block {
@@ -3570,47 +3197,49 @@ input[type=search]::-webkit-search-results-decoration {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  flex-direction: column;
   margin-bottom: 40px;
   border-radius: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: var(--bs-light);
   border: 1px solid var(--bs-border-color);
 }
 .blog_post_left_image .post_image {
-  width: 320px;
+  width: 100%;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  background-color: var(--bs-secondary);
+  background: -webkit-gradient(linear, left bottom, left top, from(#2c8cff), to(#ff5073));
+  background: linear-gradient(0deg, #2c8cff, #ff5073);
 }
 .blog_post_left_image .post_image img {
   mix-blend-mode: luminosity;
 }
 .blog_post_left_image .post_info {
-  padding: 40px;
+  padding: 25px;
   max-width: 670px;
 }
 .blog_post_left_image .blog_post_category {
   line-height: 1;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 600;
   color: var(--bs-primary);
-  text-transform: uppercase;
+  text-transform: capitalize;
+  background-color: #23253c;
+  padding: 5px 8px;
+  border-radius: 25px;
 }
 .blog_post_left_image .blog_post_title {
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 20px;
+  line-height: 24px;
   margin: 6px 0 18px;
 }
 .blog_post_left_image .blog_post_title a:hover {
   color: var(--bs-white);
 }
 .blog_post_left_image .blog_post_description {
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
 }
 
 .recent_post_list {
@@ -3665,7 +3294,8 @@ input[type=search]::-webkit-search-results-decoration {
   overflow: hidden;
   margin-bottom: 30px;
   border-radius: 20px;
-  background-color: var(--bs-secondary);
+  background: -webkit-gradient(linear, left bottom, left top, from(#2c8cff), to(#ff5073));
+  background: linear-gradient(0deg, #2c8cff, #ff5073);
 }
 .blog_card_block .blog_post_image img {
   mix-blend-mode: luminosity;
@@ -4232,8 +3862,8 @@ input[type=search]::-webkit-search-results-decoration {
 ================================================== */
 .page_header {
   padding: 206px 0 278px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(var(--bs-secondary)));
-  background-image: linear-gradient(0deg, transparent, var(--bs-secondary));
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#070710), to(#591AA9));
+  background-image: linear-gradient(0deg, #070710, #000000);
 }
 .page_header + section {
   margin-top: -130px;
@@ -4311,6 +3941,17 @@ input[type=search]::-webkit-search-results-decoration {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+   max-width: fit-content;
+}
+.hero_title {
+  font-size: 52px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  background: linear-gradient(104.04deg,#1472ff -4%,#47a9ff 23%,#adc3ff 50%,#ffadc9 77%,#ff476b 104%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: fit-content;
 }
 .ico_hero_section .ico_countdown_progress_box {
   max-width: 880px;
@@ -4489,191 +4130,7 @@ input[type=search]::-webkit-search-results-decoration {
 
 /* 4.01 - Hero Section - End
 ================================================== */
-/* 4.02 - Countdown Section - Start
-================================================== */
-.ico_countdown_progress_box {
-  padding: 15px;
-  border-radius: 20px;
-  border: 1px solid rgba(var(--bs-border-color-translucent), 0.6);
-}
-.ico_countdown_progress_box .countdown_timer_block {
-  gap: 78px;
-  padding: 62px 86px 30px;
-}
-.ico_countdown_progress_box .countdown_timer_block > li {
-  background-color: var(--bs-dark);
-  border-color: rgba(var(--bs-border-color-translucent), 0.6);
-}
-.ico_countdown_progress_box .countdown_timer_block > li:not(:last-child):after {
-  margin: 0;
-  content: "";
-  width: 18px;
-  height: 7px;
-  right: -49px;
-  line-height: 1;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url("../images/shapes/shape_duble_dot.svg");
-}
-.ico_countdown_progress_box .countdown_timer_block span {
-  color: var(--bs-white);
-}
 
-.ico_progress {
-  border-radius: 10px;
-  padding: 34px 18px 32px;
-  background-color: var(--bs-light);
-  border: 1px solid rgba(47, 51, 109, 0.6);
-}
-
-.progress_range_step {
-  margin-bottom: 28px;
-}
-.progress_range_step > li {
-  line-height: 1;
-  font-size: 16px;
-  padding: 0 30px;
-  position: relative;
-}
-.progress_range_step > li:before {
-  left: 50%;
-  top: 100%;
-  width: 2px;
-  content: "";
-  height: 24px;
-  margin-top: 5px;
-  position: absolute;
-  border-radius: 10px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(var(--bs-primary)));
-  background: linear-gradient(0deg, transparent, var(--bs-primary));
-}
-
-.progress_value {
-  margin-top: 30px;
-}
-.progress_value > li {
-  line-height: 1;
-  font-size: 16px;
-}
-
-.coin_we_accept {
-  margin-bottom: 60px;
-}
-.coin_we_accept .heading_text {
-  line-height: 1;
-  font-size: 16px;
-  margin-bottom: 30px;
-}
-
-.coins_group {
-  gap: 22px;
-}
-.coins_group > li {
-  gap: 10px;
-  text-align: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.coins_group .coin_icon {
-  max-width: 46px;
-}
-.coins_group .coin_icon img {
-  display: block;
-}
-.coins_group .coin_label {
-  line-height: 1;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.memecoin_countdown_wraper {
-  gap: 60px;
-  width: 570px;
-  height: 570px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  position: relative;
-  border-radius: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: var(--bs-dark);
-  border: 2px solid var(--bs-dark);
-  outline: 4px solid var(--bs-light);
-  -webkit-box-shadow: inset 0 0 0 8px var(--bs-primary);
-          box-shadow: inset 0 0 0 8px var(--bs-primary);
-}
-.memecoin_countdown_wraper .shape_circle {
-  top: -19px;
-  left: -23px;
-  right: -19px;
-  bottom: -19px;
-  z-index: -1;
-  position: absolute;
-  -webkit-animation: spin 30s linear infinite;
-          animation: spin 30s linear infinite;
-}
-.memecoin_countdown_wraper .shape_circle img {
-  width: 100%;
-  height: auto;
-}
-.memecoin_countdown_wraper .shape_cartoon {
-  top: 50%;
-  left: 52%;
-  z-index: -2;
-  width: 375px;
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-.memecoin_countdown_wraper .shape_cartoon_hand {
-  top: 40%;
-  width: 150px;
-  right: -112px;
-  position: absolute;
-}
-.memecoin_countdown_wraper .heading_text {
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 20px;
-  color: var(--bs-light);
-}
-
-.meme_progress {
-  width: 420px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-}
-.meme_progress .progress_value {
-  margin-top: 20px;
-}
-.meme_progress .progress_value > li {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-/* 4.02 - Countdown Section - End
-================================================== */
 /* 4.03 - About Section - Start
 ================================================== */
 .ico_about_section [class*=shape_shadow_] {
@@ -5174,105 +4631,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 /* 4.04 - Table Section - End
 ================================================== */
-/* 4.05 - Chart Section - Start
-================================================== */
-.ico_feature_section [class*=shape_shadow_] {
-  width: 252px;
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
-}
-.ico_feature_section .shape_shadow_1 {
-  top: 80px;
-  left: -120px;
-}
-.ico_feature_section .shape_shadow_2 {
-  top: 30%;
-  right: -140px;
-}
 
-.ico_investment_value {
-  gap: 40px 30px;
-  margin-bottom: 90px;
-}
-.ico_investment_value > li {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.ico_investment_value .heading_text {
-  font-size: 20px;
-  line-height: 28px;
-  margin-bottom: 13px;
-  letter-spacing: -0.4px;
-}
-.ico_investment_value .investment_value {
-  gap: 4px;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 1px 18px;
-  line-height: 28px;
-  border-radius: 4px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  background-color: var(--bs-dark);
-  border: 1px solid var(--bs-border-color);
-}
-
-.ico_coin_purchase_price {
-  margin-bottom: 70px;
-}
-.ico_coin_purchase_price .purchase_price_rate {
-  z-index: 1;
-  font-size: 18px;
-  font-weight: 500;
-  position: relative;
-}
-.ico_coin_purchase_price .purchase_price_rate strong {
-  font-weight: 700;
-}
-.ico_coin_purchase_price .chart_image {
-  margin: -50px 0 -16px;
-}
-.ico_coin_purchase_price .live_values {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 16px;
-  line-height: 28px;
-  color: var(--bs-white);
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.ico_calculation_range .live_values {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 16px;
-  line-height: 28px;
-  color: var(--bs-white);
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.ico_calculation_range .range_image {
-  margin: -16px 0;
-}
-
-/* 4.05 - Chart Section - End
-================================================== */
 /* 4.06 - Service Section - Start
 ================================================== */
 .ico_service_section [class*=shape_shadow_] {
@@ -5399,603 +4758,7 @@ input[type=search]::-webkit-search-results-decoration {
 
 /* 4.06 - Service Section - End
 ================================================== */
-/* 4.07 - Content Ticker Section - Start
-================================================== */
-.content_ticker_wrapper {
-  z-index: 1;
-  padding: 120px 0;
-  overflow: hidden;
-  position: relative;
-  border-radius: 100%;
-  border: 1px solid var(--bs-primary);
-}
-.content_ticker_wrapper:before {
-  top: 50%;
-  left: 50%;
-  width: 34%;
-  z-index: -1;
-  content: "";
-  height: 100%;
-  position: absolute;
-  border-radius: 100%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border: 1px solid var(--bs-border-color);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--bs-primary)), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(var(--bs-primary)));
-  background-image: linear-gradient(0deg, var(--bs-primary), transparent, transparent, transparent, var(--bs-primary));
-}
-.content_ticker_wrapper .shape_heart {
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  max-width: 303px;
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.content_ticker_wrapper .shape_heart .coinpay_animate {
-  top: 50%;
-  left: 50%;
-  max-width: 60%;
-  margin-top: -10px;
-  position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
 
-.content_ticker_carousel {
-  padding: 60px 0;
-  border-style: solid;
-  border-width: 1px 0;
-  border-color: var(--bs-primary);
-  background-color: var(--bs-dark);
-}
-.content_ticker_carousel .swiper-wrapper {
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
-}
-.content_ticker_carousel .swiper-slide {
-  line-height: 1;
-  font-size: 170px;
-  margin: -36px 0 -12px;
-  color: var(--bs-primary);
-  font-family: var(--bs-heading-font-family);
-}
-
-/* 4.07 - Content Ticker Section - End
-================================================== */
-/* 4.08 - Tokenomics Section - Start
-================================================== */
-.meme_tokenomics_section {
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-.meme_tokenomics_section .casino_image {
-  position: relative;
-}
-.meme_tokenomics_section .casino_image .coinpay_animate {
-  left: 50%;
-  top: -14px;
-  z-index: 1;
-  max-width: 164px;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.meme_tokenomics_distribution {
-  padding: 50px;
-  border-radius: 20px;
-  background-color: var(--bs-dark);
-  border: 1px solid var(--bs-primary);
-}
-.meme_tokenomics_distribution .heading_text {
-  line-height: 1;
-  font-size: 22px;
-  margin-bottom: 34px;
-}
-.meme_tokenomics_distribution ul {
-  gap: 3px;
-}
-.meme_tokenomics_distribution ul > li {
-  gap: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 22px;
-  line-height: 30px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  color: var(--bs-white);
-}
-.meme_tokenomics_distribution ul > li:nth-child(1) .text {
-  color: #DF5E08;
-}
-.meme_tokenomics_distribution ul > li:nth-child(2) .text {
-  color: #FC1CCF;
-}
-.meme_tokenomics_distribution ul > li:nth-child(3) .text {
-  color: #07C87F;
-}
-.meme_tokenomics_distribution ul > li:nth-child(4) .text {
-  color: #49B7F7;
-}
-.meme_tokenomics_distribution ul > li:nth-child(5) .text {
-  color: #DABA5E;
-}
-.meme_tokenomics_distribution ul > li:nth-child(6) .text {
-  color: #FE9BE9;
-}
-.meme_tokenomics_distribution ul .icon {
-  width: 16px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-}
-.meme_tokenomics_distribution ul .value {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  min-width: 56px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.meme_tokenomics_total_supply {
-  line-height: 1;
-  font-size: 20px;
-  margin-bottom: 40px;
-  color: var(--bs-white);
-  font-family: var(--bs-heading-font-family);
-}
-
-.meme_tokenomics_benefits {
-  overflow: hidden;
-  position: relative;
-  border-radius: 20px;
-  padding: 30px 100px 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--bs-primary)), to(transparent));
-  background-image: linear-gradient(0deg, var(--bs-primary), transparent);
-}
-.meme_tokenomics_benefits:before {
-  left: 50%;
-  bottom: 0;
-  z-index: 2;
-  content: "";
-  width: 310px;
-  height: 120px;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--bs-primary)), to(transparent));
-  background-image: linear-gradient(0deg, var(--bs-primary), transparent);
-}
-
-.benefits_features {
-  position: relative;
-  text-align: center;
-}
-.benefits_features .benefits_circle {
-  gap: 4px;
-  z-index: 1;
-  width: 310px;
-  height: 330px;
-  margin: 0 auto;
-  padding: 71px 0 0;
-  position: relative;
-  border-radius: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 340px 0 -95px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: var(--bs-dark);
-}
-.benefits_features .benefits_circle:before, .benefits_features .benefits_circle:after {
-  content: "";
-  position: absolute;
-  border-radius: inherit;
-  border: 1px solid rgba(var(--bs-primary-rgb), 0.15);
-  background-color: rgba(var(--bs-primary-rgb), 0.03);
-}
-.benefits_features .benefits_circle:before {
-  inset: -54px;
-}
-.benefits_features .benefits_circle:after {
-  inset: -126px;
-}
-.benefits_features .benefits_circle .percent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  line-height: 1;
-  font-size: 70px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: var(--bs-light);
-  font-family: var(--bs-heading-font-family);
-}
-.benefits_features .benefits_circle .percent_title {
-  line-height: 1;
-  font-size: 20px;
-  font-family: var(--bs-body-font-family);
-}
-.benefits_features [class*=benefits_feature_item_] {
-  z-index: 1;
-  width: 200px;
-  position: absolute;
-  border-radius: 10px;
-  padding: 36px 30px 31px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--bs-primary)), color-stop(transparent), color-stop(transparent), to(var(--bs-primary)));
-  background-image: linear-gradient(0deg, var(--bs-primary), transparent, transparent, var(--bs-primary));
-}
-.benefits_features [class*=benefits_feature_item_]:before {
-  inset: 1px;
-  z-index: -1;
-  content: "";
-  position: absolute;
-  border-radius: inherit;
-  background-color: var(--bs-dark);
-}
-.benefits_features [class*=benefits_feature_item_]:after {
-  z-index: 2;
-  content: "";
-  width: 16px;
-  height: 16px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  position: absolute;
-  border-radius: 100%;
-  outline: 8px solid #20242C;
-  -webkit-box-shadow: 0 0 20px 10px var(--bs-primary);
-          box-shadow: 0 0 20px 10px var(--bs-primary);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--bs-primary)), to(var(--bs-dark)));
-  background-image: linear-gradient(0deg, var(--bs-primary), var(--bs-dark));
-}
-.benefits_features [class*=benefits_feature_item_] .icon {
-  font-size: 40px;
-  margin: 0 0 20px;
-  color: var(--bs-light);
-}
-.benefits_features [class*=benefits_feature_item_] .title {
-  font-size: 16px;
-  line-height: 24px;
-}
-.benefits_features .benefits_feature_item_1 {
-  left: 110px;
-  bottom: 376px;
-}
-.benefits_features .benefits_feature_item_1:after {
-  right: -78px;
-  bottom: -78px;
-}
-.benefits_features .benefits_feature_item_2 {
-  left: 0;
-  bottom: 120px;
-}
-.benefits_features .benefits_feature_item_2:after {
-  right: -76px;
-  bottom: -30px;
-}
-.benefits_features .benefits_feature_item_3 {
-  right: 110px;
-  bottom: 376px;
-}
-.benefits_features .benefits_feature_item_3:after {
-  left: -78px;
-  bottom: -78px;
-}
-.benefits_features .benefits_feature_item_4 {
-  right: 0;
-  bottom: 120px;
-}
-.benefits_features .benefits_feature_item_4:after {
-  left: -76px;
-  bottom: -30px;
-}
-
-.pepecoin_tokenomics_section .shape_shadow {
-  left: 50%;
-  width: 80%;
-  bottom: -70px;
-  -webkit-filter: blur(400px);
-          filter: blur(400px);
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-.pepecoin_tokenomics_section .shape_shadow img {
-  width: 100%;
-}
-.pepecoin_tokenomics_section .shape_grash {
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.pepecoin_tokenomics_section .shape_grash img {
-  width: 100%;
-  display: block;
-}
-
-.pepecoin_token_supply {
-  position: relative;
-  padding: 70px 120px 130px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.pepecoin_token_supply .heading_text,
-.pepecoin_token_supply .token_supply_value {
-  line-height: 1;
-  font-size: 60px;
-  font-family: var(--bs-heading-font-family);
-}
-.pepecoin_token_supply p {
-  font-size: 24px;
-  font-weight: 600;
-  margin-top: 10px;
-  line-height: 34px;
-}
-.pepecoin_token_supply [class*=shape_tree_wood_] {
-  bottom: -110px;
-  max-width: 300px;
-  position: absolute;
-}
-.pepecoin_token_supply .shape_tree_wood_1 {
-  left: -30px;
-}
-.pepecoin_token_supply .shape_tree_wood_2 {
-  left: 25%;
-}
-.pepecoin_token_supply .shape_tree_wood_3 {
-  right: 24%;
-}
-.pepecoin_token_supply .shape_tree_wood_4 {
-  right: -46px;
-}
-
-/* 4.08 - Tokenomics Section - End
-================================================== */
-/* 4.09 - Feature Section - Start
-================================================== */
-.pepecoin_feature_section .shape_tree img {
-  max-width: 936px;
-  margin-top: -140px;
-  margin-right: -440px;
-  display: inline-block;
-}
-.pepecoin_feature_section .shape_stone {
-  z-index: 1;
-  left: -50px;
-  right: -50px;
-  bottom: -70px;
-}
-.pepecoin_feature_section .shape_dragonfly {
-  left: 40%;
-  bottom: 140px;
-  max-width: 150px;
-}
-.pepecoin_feature_section .shape_dragonfly img {
-  -webkit-animation: upDownMover 3s ease-in-out infinite;
-          animation: upDownMover 3s ease-in-out infinite;
-}
-.pepecoin_feature_section .shape_frog {
-  left: 80px;
-  bottom: 18px;
-  max-width: 280px;
-}
-
-/* 4.09 - Feature Section - End
-================================================== */
-/* 4.10 - Roadmap Section - Start
-================================================== */
-.pepecoin_roadmap_section {
-  background-image: radial-gradient(#3CA72F, var(--bs-primary));
-}
-.pepecoin_roadmap_section .shape_tree {
-  bottom: 0;
-  left: -800px;
-  max-width: 1350px;
-}
-.pepecoin_roadmap_section .shape_stone {
-  z-index: 1;
-  left: -50px;
-  right: -50px;
-  bottom: -70px;
-}
-.pepecoin_roadmap_section .shape_cartoon_1 {
-  left: 16%;
-  z-index: 2;
-  bottom: 16px;
-  max-width: 320px;
-}
-.pepecoin_roadmap_section .shape_tree_wood {
-  right: 0;
-  bottom: 0;
-  max-width: 480px;
-}
-.pepecoin_roadmap_section .pepe_coin_image {
-  right: 128px;
-  bottom: 170px;
-  max-width: 260px;
-}
-.pepecoin_roadmap_section .pepe_coin_image img {
-  -webkit-animation: coinFlip 4s infinite linear;
-          animation: coinFlip 4s infinite linear;
-}
-
-.pepecoin_roadmap_list {
-  top: 86px;
-  left: 50%;
-  gap: 124px;
-  width: 100%;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-.pepecoin_roadmap_list > li {
-  line-height: 1;
-  font-size: 44px;
-  color: var(--bs-heading-color);
-  font-family: var(--bs-heading-font-family);
-}
-
-/* 4.10 - Roadmap Section - End
-================================================== */
-/* 4.11 - Testimonial Section - Start
-================================================== */
-.testimonial_block {
-  padding: 40px;
-  border: 1px solid var(--bs-border-color);
-}
-.testimonial_block .testimonial_admin_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.testimonial_block .admin_logo {
-  width: 170px;
-  height: 52px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  padding: 0 18px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: var(--bs-dark);
-  clip-path: polygon(100% 0, 86% 100%, 0 100%, 14% 0);
-}
-.testimonial_block .admin_logo img {
-  max-height: 44px;
-}
-.testimonial_block .icon_block {
-  width: auto;
-  height: auto;
-  border: none;
-  max-width: 60px;
-  border-radius: 0;
-  overflow: visible;
-  background: transparent;
-}
-.testimonial_block .icon_block svg {
-  width: 100%;
-}
-.testimonial_block .icon_block svg path {
-  fill: var(--bs-primary);
-}
-.testimonial_block .testimonial_admin_comment {
-  font-size: 26px;
-  line-height: 40px;
-  margin: 30px 0 29px;
-  padding-bottom: 39px;
-  border-bottom: 1px solid var(--bs-border-color);
-}
-
-.testimonial_block.layout_2 {
-  padding: 0;
-  border: none;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.testimonial_block.layout_2 .testimonial_admin_comment {
-  color: var(--bs-white);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-.testimonial_block.layout_2 .authorbox_block {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.testimonial_block.layout_2 .authorbox_block .authorbox_title {
-  font-size: 28px;
-  margin-bottom: 14px;
-  color: var(--bs-white);
-}
-.testimonial_block.layout_2 .authorbox_block .authorbox_designation {
-  line-height: 1;
-  font-size: 18px;
-  color: var(--bs-white);
-}
-
-.testimonial_carousel_2 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: overlay;
-  background-position: center center;
-  background-color: rgba(14, 14, 14, 0.7);
-}
-.testimonial_carousel_2 .swiper-wrapper {
-  padding: 130px 0;
-}
-.testimonial_carousel_2 .testimonial_block.layout_2 {
-  margin: auto;
-  max-width: 856px;
-}
-
-.testimonial_block.layout_3 {
-  border-width: 0;
-  text-align: center;
-  background-color: var(--bs-secondary);
-}
-.testimonial_block.layout_3 .authorbox_block {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.testimonial_block.layout_3 .testimonial_admin_comment {
-  margin: 0;
-  border-width: 0;
-  color: var(--bs-heading-color);
-}
-
-.testimonial_carousel_3 .swiper-slide:not(.swiper-slide-active) {
-  opacity: 0.3;
-}
-
-.testimonial_block.layout_4 {
-  border-color: var(--bs-secondary);
-  background-color: var(--bs-secondary);
-}
-.testimonial_block.layout_4 .quote_icon {
-  max-width: 40px;
-}
-.testimonial_block.layout_4 .quote_icon svg path {
-  fill: var(--bs-heading-color);
-}
-.testimonial_block.layout_4 .testimonial_admin_comment {
-  font-size: 20px;
-  line-height: 30px;
-  margin: 24px 0 30px;
-  padding-bottom: 26px;
-}
-
-/* 4.11 - Testimonial Section - End
-================================================== */
 /* 5.01 - Home Pages - Start
 ================================================== */
 .index_ico {
@@ -6024,7 +4787,8 @@ input[type=search]::-webkit-search-results-decoration {
   background-color: #0f1021;
 }
 .index_ico .iframe_block {
-  background-color: var(--bs-secondary);
+  background: -webkit-gradient(linear, left bottom, left top, from(#2c8cff), to(#ff5073));
+  background: linear-gradient(0deg, #2c8cff, #ff5073);
 }
 .index_ico .iframe_block iframe {
   mix-blend-mode: luminosity;
@@ -6164,7 +4928,8 @@ input[type=search]::-webkit-search-results-decoration {
   overflow: hidden;
   border-radius: 20px;
   margin-bottom: 80px;
-  background-color: var(--bs-secondary);
+ background: -webkit-gradient(linear, left bottom, left top, from(#2c8cff), to(#ff5073));
+  background: linear-gradient(0deg, #2c8cff, #ff5073);
 }
 [class*=_details_section] .details_image img {
   mix-blend-mode: luminosity;
@@ -6532,53 +5297,7 @@ input[type=search]::-webkit-search-results-decoration {
 
 /* 5.02 - Details Pages - End
 ================================================== */
-/* 5.03 - Contact Page - Start
-================================================== */
-.contact_info_box {
-  padding: 50px;
-  border-radius: 20px;
-  background-color: var(--bs-light);
-  border: 1px solid var(--bs-border-color);
-}
-.contact_info_box .social_block.style_4 a {
-  width: 46px;
-  height: 46px;
-}
-.contact_info_box .contact_info_list {
-  margin-bottom: 40px;
-}
-.contact_info_box .iconlist_block.unordered_list_block {
-  gap: 39px;
-}
 
-.contact_section .gmap_canvas {
-  margin-top: 150px;
-}
-
-.gmap_canvas {
-  z-index: 1;
-  padding: 15px;
-  position: relative;
-  border-radius: 10px;
-  background-image: linear-gradient(-45deg, #944FEB, #D85C37);
-}
-.gmap_canvas:before {
-  inset: 1px;
-  z-index: -1;
-  content: "";
-  position: absolute;
-  border-radius: inherit;
-  background-color: var(--bs-dark);
-}
-.gmap_canvas iframe {
-  width: 100%;
-  height: 700px;
-  border-radius: inherit;
-  mix-blend-mode: luminosity;
-}
-
-/* 5.03 - Contact Page - End
-================================================== */
 /* 5.04 - Register Pages - Start
 ================================================== */
 .register_section {
@@ -6653,25 +5372,11 @@ input[type=search]::-webkit-search-results-decoration {
 .register_form button[type=submit] {
   width: 100%;
   margin-top: 30px;
-  border-radius: 6px;
+  border-radius: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-/* 5.04 - Register Pages - End
-================================================== */
-/* 
-Responsive For Mobile & Tablet Devices
-================================================== 
-* Project Name   :  Coinpay - Crypto Currency Site Template.
-* File           :  CSS Base
-* Version        :  1.0.0
-* Author         :  XpressBuddy (https://themeforest.net/user/xpressbuddy/portfolio)
-* Developer			 :	webrok (https://www.fiverr.com/webrok?up_rollout=true)
-*	CSS code for responsive layout To make responsive
-================================================== 
-*/
 /* Media Screen 1440px - Start
 ================================================== */
 @media (max-width: 1440px) {

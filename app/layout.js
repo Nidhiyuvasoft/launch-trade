@@ -13,6 +13,8 @@ import "../public/assets/css/swiper-bundle.min.css"
 import "../public/assets/css/magnific-popup.min.css"
 import "../public/assets/css/odometer.min.css"
 import "../public/assets/css/style.css"
+import '../public/assets/images/site_logo/favicon_1.svg'
+
 
 
 
@@ -30,7 +32,7 @@ export default function RootLayout({
 			<head>
 				<meta charSet="utf-8"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-				<link rel="shortcut icon" href="assets/images/site_logo/favicon_1.svg" />
+				{/* <link rel="shortcut icon" href="assets/images/site_logo/favicon_1.svg" /> */}
 
 			</head>
 			<body className="index_ico" suppressHydrationWarning={true}>
